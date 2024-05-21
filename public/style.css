@@ -1,167 +1,4 @@
-/* style.css
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-}
 
-body {
-    background:url(images/background.jpg)
-}
-
-.Card {
-    width: 90%;
-    max-width: 600px;
-    background: linear-gradient(135deg, #000, #5b548a);
-    color: #fff;
-    margin: 300px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
-    position: relative; 
-}
-
-.search {
-    margin-bottom: 20px;
-}
-
-.error {
-    display: none; 
-  
-    color: red;
-}
-
-.weather {
-    display: none; 
-}
-
-.weather.show {
-    margin-top:10px;
-    display: block; 
-}
-
-.Card {
-    width: 90%;
-    max-width: 600px;
-    background: linear-gradient(135deg,#000, #5b548a);
-    color: #fff;
-    margin: 300px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
-}
-
-.search {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.search input {
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
-}
-
-.search button {
-    border: 0;
-    outline: 0;
-    background: #ebfffc;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-}
-
-.search button img {
-    width: 16px;
-}
-
-.container {
-    width: 90%;
-    max-width: 600px;
-    background: linear-gradient(135deg,#000, #5b548a);
-    color: #fff;
-    margin: 50px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
-    text-align: center;
-}
-.weather-icon {
-    width: 170px;
-    margin-top: 30px;
-}
-
-.weather h1 {
-    font-size: 80px;
-    font-weight: 500;
-}
-
-.weather h2 {
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: -10px;
-}
-
-.details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
-}
-
-.col {
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.col img {
-    width: 40px;
-    margin-right: 10px;
-}
-
-.humidity,
-.wind {
-    font-size: 28px;
-    margin-top: -6px;
-}
-
-.weather {
-    display: none;
-}
-
-.error {
-    text-align: left;
-    margin-left: 10px;
-    font-size: 14px;
-    margin-top: 10px;
-    display: none;
-}
-
-.current-time {
-    font-size: 40px;
-    font-weight: 400;
-    margin-top: -20px;
-    margin-bottom: 5px;
-}
-
-.time {
-    font-size: 30px;
-    font-weight: 200;
-    margin-top: -20px;
-    margin-bottom: 10px;
-} */
 * {
     margin: 0;
     padding: 0;
@@ -171,35 +8,70 @@ body {
 
 body {
     background:url(images/background.jpg);
+    width:100%;
+    height:100%;
 
 }
 .welcome{
-    margin-top: 200px;
+    margin-top: 50px;
+    font-size:50px;
+    color:greenyellow;
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .Card {
-    width: 200%;
-    max-width: 600px;
-    background: linear-gradient(135deg, #000, #5b548a);
+    width: 75%;
+    max-width: 100%;
+    background: linear-gradient(135deg,#000,#4CAF50);
+    /* background-color: #4CAF50; */
     color: #fff;
-    margin: 300px auto 0;
+    margin: 20px auto 0;
     border-radius: 20px;
-    padding: 20px 35px;
+  
     text-align: center;
     position: relative; 
-    padding:150px 50px;
+   
+    padding-top:50px;
+    padding-bottom: 150px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-left:200px;
 }
 
 .search {
     margin-bottom: 20px;
+    /* background-color:#000; */
+}
+.intro{
+        transition: background-color 0.3s ease;
+    margin-top:0px;
+    margin-bottom:50px;
+  
+}
+.live{
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+.live:hover{
+    color: #ff004f;
+}
+
+.Desc {
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+}
+.Desc:hover{
+    color: #ff004f;
 }
 
 .error {
+    font-size: 20px;
     display: none; 
     color: red;
     margin-top: 10px; /* Add margin top to error message */
-    text-align: left; /* Align error message to the left */
+    text-align: left; 
+    
 }
 
 .weather {
@@ -247,15 +119,26 @@ body {
 
 .container {
     display:none;
-    width: 90%;
-    max-width: 6000px;
-    background: linear-gradient(135deg, #000, #5b548a);
+    width: 75%;
+    height: 100%;
+ 
+     background: linear-gradient(135deg, #000, #ff004f); 
+ 
+
     color: #fff;
-    margin: 50px auto 0;
+    margin-top: 100px;;
+    margin-bottom: 150px;
+   margin-left:100px;
+   margin-right:100px; 
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 100px 50px;
     text-align: center;
+    
 }
+
+
+
+
 
 .weather-icon {
     width: 170px;
@@ -267,7 +150,7 @@ body {
     margin-bottom: 15px;
     
 }
-.weather .intro .Desc{
+.weather .intro .desc{
     color:greenyellow;
     font-size: 40px;
     margin-bottom: 8px;
@@ -286,14 +169,15 @@ body {
     font-weight: 400;
     margin-top: -10px;
 }
-/* .Card .intro  h1{
-    margin-top:100px;
-    justify-content: space-between;
- 
-    font-size: 75px;
-    font-weight:500;
 
-} */
+
+.complete img,
+.complete h1,
+.complete h2 {
+    margin-bottom: 20px; 
+   color:#000;
+}
+
 .Card .intro .live{
     margin-top:10px;
     justify-content: space-between;
@@ -309,6 +193,15 @@ body {
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
+    color:#000;
+    /* background-color:aqua */
+}
+.details img{
+ 
+    /* background-color:aqua; */
+    background-size: 500px;
+    width: 500px;
+    height: auto;
 }
 
 .col {
@@ -340,4 +233,99 @@ body {
     font-weight: 200;
     margin-top: -20px;
     margin-bottom: 10px;
+}
+
+
+
+.start {
+    /* text-align: center; */
+    font-size: 50px;
+    color:greenyellow;
+    margin-top: 50px;
+    margin-left:25%;
+}
+
+
+
+.complete .weather-icon {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.errorgot{
+
+    
+        width: 100%;
+   
+        color: #fff;
+      
+        margin-top: 100px;
+        border-radius: 20px;
+      
+        text-align: center;
+        position: relative; 
+       
+        padding-top:150px;
+        padding-bottom: 150px;
+        padding-right: 100px;
+        padding-left: 100px;
+    
+}
+.errorhere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    padding: 30px;
+    border: 8px solid #f44336;
+    background-color: #ffebee;
+    border-radius: 5px;
+    color: #f44336;
+    font-size: 30px;
+}
+.error-message{
+    /* line-break: 10px; */
+    line-height: 1.5;
+    
+}
+
+.error-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+
+
+    .container {
+        display:none;
+        width: 75%;
+        height: 100%;
+       
+         background: linear-gradient(135deg, #000, #000); 
+    
+        color: #fff;
+        margin-top: 100px;;
+        margin-bottom: 150px;
+        margin-left:100px;
+       margin-right:200px;  
+        border-radius: 20px;
+        padding: 100px 50px;
+        text-align: center;
+        
+    }
+
+    .start{
+        font-size: 50px;
+        color:greenyellow;
+        margin-top: 50px;
+        margin-left:30%;
+    }
+
+
 }
